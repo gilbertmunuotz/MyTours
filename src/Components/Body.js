@@ -1,14 +1,18 @@
 import React from 'react';
+import card from '../Images/card3.jpg'
 import ReactPlayer from 'react-player'
 import card1 from "../Images/card.jpg";
+import card2 from '../Images/card2.jpg'
+import Galla1 from '../Images/Gallery1.jpg'
+import Galla2 from '../Images/Gallery2.jpg'
 import myVideo from '../Videos/Welcome.mp4';
 
 function Body() {
     return (
         <div className='Body'>
             <div className="bodyone">
-                <h1 className='text-5xl text-center mt-10 uppercase'>John Deere Adventures</h1>
-                <p className='mx-14 text-xl first-letter:text-5xl'>Welcome to John Deere Adventures!
+                <h1 className='text-5xl text-center mt-10 uppercase italic'>John Deere Adventures</h1>
+                <p className='mx-14 text-xl first-letter:text-5xl first-letter:italic'>Welcome to John Deere Adventures!
 
                     Since 2000, John Deere Adventures has been leading unforgettable tours in the heart of East Africa, showcasing the breathtaking beauty and unique cultures of Tanzania. We're passionate about sharing our love for this incredible country with travelers from all over the world, and we offer a wide range of tours to suit every interest and budget.
 
@@ -41,25 +45,98 @@ function Body() {
             <div className="cards">
                 <h5 className='font-bold text-5xl text-center my-10'>Tours & Safari</h5>
                 <div className="grid grid-cols-3 gap-6 mx-14">
-                    <section className='bg-gray-200 rounded-lg shadow-2xl shadow-gray-400 p-8 z-10'>
-                        <img src={card1} alt="" className='object-fill' />
+                    <section className='bg-gray-200 rounded-lg shadow-2xl shadow-gray-400 p-8'>
+                        <img src={card1} alt="image2" className='object-fill rounded-lg' />
                         <div className="explanations">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam consequuntur facere, voluptatem exercitationem repudiandae et ullam accusantium illo tenetur architecto sint libero repellat. Esse cumque veniam neque architecto distinctio!</p>
+                            <p className='my-2'>
+                                <strong>Witness the Great Migration<br /></strong>Experience the awe-inspiring Great Migration, as millions of wildebeest, zebra, and gazelle traverse the Serengeti and Masai Mara. Our expert guides ensure optimal viewing, guiding you to prime locations for witnes All.
+                            </p>
                             <button className='rounded-full bg-green-600 p-2'>Book Now</button>
                         </div>
                     </section>
 
                     <section className='bg-gray-200 rounded-lg shadow-2xl shadow-gray-400 p-8'>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam atque, reiciendis corrupti dicta id eum voluptatum harum similique odit soluta eveniet asperiores molestias quidem dolorum in. Enim laborum at animi?</h3>
+                        <img src={card} alt="image2" className='object-fill rounded-lg' />
+                        <h3 className='my-2'>
+                            <strong>Enjoy customized itineraries<br /></strong>Our Team promotes a knowledgeable team offering unique travel experiences for various styles, from adventurous backpackers to luxury seekers, ensuring a tailor-made experience for everyone.
+                        </h3>
                         <button className='rounded-full bg-green-600 p-2'>Book Now</button>
                     </section>
 
                     <section className='bg-gray-200 rounded-lg shadow-2xl shadow-gray-400 p-8'>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam atque, reiciendis corrupti dicta id eum voluptatum harum similique odit soluta eveniet asperiores molestias quidem dolorum in. Enim laborum at animi?</h3>
+                        <img src={card2} alt="image3" className='object-fill rounded-lg' />
+                        <p className='my-2'>
+                            <strong>Climb the slopes of Mount Kilimanjaro<br /></strong>Embark on a life-changing expedition to Mount Kilimanjaro, the "Roof of Africa," with expert guides and support. Choose from various routes and trekking options to accommodate different fitness levels.
+                        </p>
                         <button className='rounded-full bg-green-600 p-2'>Book Now</button>
                     </section>
                 </div>
             </div>
+
+
+
+            <div className="gallery my-12">
+                <div className=" grid grid-cols-2 gap-6 mx-16">
+                    <section className='ml-16'>
+                        <div className="relative">
+                            <img src={Galla1} alt="image1" className="object-fill rounded-lg" />
+                            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
+                                Ngorongoro Crater
+                            </h1>
+                        </div>
+                    </section>
+
+                    <section className='ml-16'>
+                        <div className="relative">
+                            <img src={Galla2} alt="image2" className="object-fill rounded-lg" />
+                            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
+                                Serengeti
+                            </h1>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div className="testimonials">
+                <h2 className='text-center text-3xl font-bold'>Testimonials</h2>
+                <section class="text-gray-600 body-font">
+                    <div class="container px-5 py-24 mx-auto">
+                        <div class="flex flex-wrap -m-4">
+                            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                                <div class="h-full text-center">
+                                    <img src="https://dummyimage.com/302x302" alt='testimonials'
+                                        class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
+                                    <p class="leading-relaxed">John Deere Tours made our family safari to Tanzania an unforgettable experience! From the moment we arrived in Arusha, we were met with warm hospitality and expert guidance</p>
+                                    <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
+                                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Holden Smith</h2>
+                                    <p class="text-gray-500">From The Smith Family, California, USA</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                                <div class="h-full text-center">
+                                    <img src="https://dummyimage.com/300x300"
+                                        alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
+                                    <p class="leading-relaxed"> John Deere Tours ensured I had the perfect opportunities to frame unforgettable shots. They even arranged special permits for me to access exclusive areas, allowing me to capture truly unique images. </p>
+                                    <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
+                                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">William Jones</h2>
+                                    <p class="text-gray-500">Wildlife Photographer, United Kingdom</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 lg:mb-0 p-4">
+                                <div class="h-full text-center">
+                                    <img src="https://dummyimage.com/305x305"
+                                        alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
+                                    <p class="leading-relaxed">Our honeymoon safari was a perfect blend of romance, adventure, and luxury. After Arriving at our luxurious tented camp, the breathtaking views of the savanna, we knew we were in for something special.</p>
+                                    <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
+                                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Sarah & Michael Thompson,</h2>
+                                    <p class="text-gray-500">New York, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
 
         </div>
     )
