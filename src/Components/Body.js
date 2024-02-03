@@ -1,11 +1,14 @@
-import React from 'react';
-import card from '../Images/card3.jpg'
+import React from 'react'
 import ReactPlayer from 'react-player'
-import card1 from "../Images/card.jpg";
+import card from '../Images/card3.jpg'
+import card1 from "../Images/card.jpg"
 import card2 from '../Images/card2.jpg'
+import test2 from '../Images/Test2.jpg'
+import test3 from '../Images/Test3.jpg'
+import test1 from '../Images/Test1.webp'
 import Galla1 from '../Images/Gallery1.jpg'
 import Galla2 from '../Images/Gallery2.jpg'
-import myVideo from '../Videos/Welcome.mp4';
+import myVideo from '../Videos/Welcome.mp4'
 
 function Body() {
     return (
@@ -104,7 +107,7 @@ function Body() {
                         <div class="flex flex-wrap -m-4">
                             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
                                 <div class="h-full text-center">
-                                    <img src="https://dummyimage.com/302x302" alt='testimonials'
+                                    <img src={test1} alt='testimonials'
                                         class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
                                     <p class="leading-relaxed">John Deere Tours made our family safari to Tanzania an unforgettable experience! From the moment we arrived in Arusha, we were met with warm hospitality and expert guidance</p>
                                     <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
@@ -114,18 +117,17 @@ function Body() {
                             </div>
                             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
                                 <div class="h-full text-center">
-                                    <img src="https://dummyimage.com/300x300"
-                                        alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
+                                    <img src={test2} alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
                                     <p class="leading-relaxed"> John Deere Tours ensured I had the perfect opportunities to frame unforgettable shots. They even arranged special permits for me to access exclusive areas, allowing me to capture truly unique images. </p>
                                     <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
                                     <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">William Jones</h2>
                                     <p class="text-gray-500">Wildlife Photographer, United Kingdom</p>
                                 </div>
                             </div>
+
                             <div class="lg:w-1/3 lg:mb-0 p-4">
                                 <div class="h-full text-center">
-                                    <img src="https://dummyimage.com/305x305"
-                                        alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
+                                    <img src={test3} alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
                                     <p class="leading-relaxed">Our honeymoon safari was a perfect blend of romance, adventure, and luxury. After Arriving at our luxurious tented camp, the breathtaking views of the savanna, we knew we were in for something special.</p>
                                     <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
                                     <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Sarah & Michael Thompson,</h2>
