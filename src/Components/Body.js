@@ -76,8 +76,6 @@ function Body() {
                 </div>
             </div>
 
-
-
             <div className="gallery my-12">
                 <div className=" grid grid-cols-2 gap-6 mx-16">
                     <section className='ml-16'>
@@ -102,43 +100,42 @@ function Body() {
 
             <div className="testimonials">
                 <h2 className='text-center text-3xl font-bold'>Testimonials</h2>
-                <section class="text-gray-600 body-font">
-                    <div class="container px-5 py-24 mx-auto">
-                        <div class="flex flex-wrap -m-4">
-                            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                                <div class="h-full text-center">
-                                    <img src={test1} alt='testimonials'
-                                        class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
-                                    <p class="leading-relaxed">John Deere Tours made our family safari to Tanzania an unforgettable experience! From the moment we arrived in Arusha, we were met with warm hospitality and expert guidance</p>
-                                    <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
-                                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Holden Smith</h2>
-                                    <p class="text-gray-500">From The Smith Family, California, USA</p>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                                <div class="h-full text-center">
-                                    <img src={test2} alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
-                                    <p class="leading-relaxed"> John Deere Tours ensured I had the perfect opportunities to frame unforgettable shots. They even arranged special permits for me to access exclusive areas, allowing me to capture truly unique images. </p>
-                                    <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
-                                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">William Jones</h2>
-                                    <p class="text-gray-500">Wildlife Photographer, United Kingdom</p>
+                <section className="text-gray-600 body-font">
+                    <div className="container px-5 py-24 mx-auto">
+                        <div className="flex flex-wrap -m-4">
+                            <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                                <div className="h-full text-center">
+                                    <img src={test1} alt='testimonials' className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
+                                    <p className="leading-relaxed">John Deere Tours made our family safari to Tanzania an unforgettable experience! From the moment we arrived in Arusha, we were met with warm hospitality and expert guidance</p>
+                                    <span className="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
+                                    <h2 className="text-gray-900 font-medium tracking-wider text-sm">Holden Smith</h2>
+                                    <p className="text-gray-500">From The Smith Family, California, USA</p>
                                 </div>
                             </div>
 
-                            <div class="lg:w-1/3 lg:mb-0 p-4">
-                                <div class="h-full text-center">
-                                    <img src={test3} alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
-                                    <p class="leading-relaxed">Our honeymoon safari was a perfect blend of romance, adventure, and luxury. After Arriving at our luxurious tented camp, the breathtaking views of the savanna, we knew we were in for something special.</p>
-                                    <span class="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
-                                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Sarah & Michael Thompson,</h2>
-                                    <p class="text-gray-500">New York, USA</p>
+                            <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                                <div className="h-full text-center">
+                                    <img src={test2} alt="testimonial" className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
+                                    <p className="leading-relaxed"> John Deere Tours ensured I had the perfect opportunities to frame unforgettable shots. They even arranged special permits for me to access exclusive areas, allowing me to capture truly unique images. </p>
+                                    <span className="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
+                                    <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">William Jones</h2>
+                                    <p className="text-gray-500">Wildlife Photographer, United Kingdom</p>
+                                </div>
+                            </div>
+
+                            <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                                <div className="h-full text-center">
+                                    <img src={test3} alt="testimonial" className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" />
+                                    <p className="leading-relaxed">Our honeymoon safari was a perfect blend of romance, adventure, and luxury. After Arriving at our luxurious tented camp, the breathtaking views of the savanna, we knew we were in for something special.</p>
+                                    <span className="inline-block h-1 w-10 rounded bg-green-600 mt-6 mb-4"></span>
+                                    <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">Sarah & Michael Thompson,</h2>
+                                    <p className="text-gray-500">New York, USA</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-
 
         </div>
     )
