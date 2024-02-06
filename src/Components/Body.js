@@ -13,7 +13,7 @@ import myVideo from '../Videos/Welcome.mp4'
 function Body() {
     return (
         <div className='Body'>
-            <div className="bodyone">
+            <div className="Welcome-Text">
                 <h1 className='text-5xl text-center mt-10 uppercase italic'>John Deere Adventures</h1>
                 <p className='mx-14 text-xl first-letter:text-5xl first-letter:italic'>Welcome to John Deere Adventures!
 
@@ -24,7 +24,7 @@ function Body() {
                     Unforgettable Experiences Await</p>
             </div>
 
-            <div className="whychoose">
+            <div className="WhychooseUs">
                 <div className="grid grid-cols-2 gap-3 mx-14 mt-8">
                     <div className="video">
                         <ReactPlayer
@@ -76,32 +76,63 @@ function Body() {
                 </div>
             </div>
 
-            <div className="gallery my-12">
-                <div className=" grid grid-cols-2 gap-6 mx-16">
-                    <section className='ml-16'>
-                        <div className="relative">
-                            <img src={Galla1} alt="image1" className="object-fill rounded-lg" />
-                            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
-                                Ngorongoro Crater
-                            </h1>
-                        </div>
-                    </section>
+            <div className="Gallery1">
+                <div className="my-12">
+                    <div className=" grid grid-cols-2 gap-4 mx-16">
+                        <section className='mx-12'>
+                            <div className="relative">
+                                <img src={Galla1} alt="image1" className="object-cover rounded-lg" />
+                                <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
+                                    Ngorongoro Crater
+                                </h1>
+                            </div>
+                        </section>
 
-                    <section className='ml-16'>
-                        <div className="relative">
-                            <img src={Galla2} alt="image2" className="object-fill rounded-lg" />
-                            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
-                                Serengeti
-                            </h1>
-                        </div>
-                    </section>
+                        <section className='mx-12'>
+                            <div className="relative">
+                                <img src={Galla1} alt="image2" className="object-cover rounded-lg" />
+                                <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
+                                    Serengeti
+                                </h1>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
 
-            <div className="testimonials">
-                <h2 className='text-center text-3xl font-bold'>Testimonials</h2>
+            <div className="Gallery2">
+                <div className="grid">
+                    <div className="grid-cols-3">
+                        <div className="flex mx-14 gap-4">
+                            <section className='relative'>
+                                <img src={Galla2} alt="image2" className="object-fill rounded-lg bg-center" />
+                                <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
+                                    Serengeti
+                                </h1>
+                            </section>
+
+                            <section className='relative'>
+                                <img src={Galla2} alt="image2" className="object-fill rounded-lg bg-center" />
+                                <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
+                                    Serengeti
+                                </h1>
+                            </section>
+
+                            <section className='relative'>
+                                <img src={Galla2} alt="image2" className="object-fill rounded-lg bg-center" />
+                                <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
+                                    Serengeti
+                                </h1>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="Testimonials">
+                <h2 className='text-center text-3xl font-bold mt-12'>Testimonials</h2>
                 <section className="text-gray-600 body-font">
-                    <div className="container px-5 py-24 mx-auto">
+                    <div className="container px-5 py-12 mx-auto">
                         <div className="flex flex-wrap -m-4">
                             <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
                                 <div className="h-full text-center">
@@ -137,7 +168,7 @@ function Body() {
                 </section>
             </div>
 
-        </div>
+        </div >
     )
 }
 
