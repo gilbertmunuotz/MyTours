@@ -28,7 +28,7 @@ function Home() {
         <div className="Home">
             <div className="bg-cover">
                 <Navbar />
-                <Slider {...settings} className="bg-cover min-h-screen z-0">
+                <Slider {...settings} className="bg-cover">
                     {slides.map((slide) => (
                         <span className="slides" key={slide.src}>
                             <img src={slide} alt="Slide" className='w-full object-cover overflow-clip' />

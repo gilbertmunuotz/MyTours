@@ -6,9 +6,11 @@ import card2 from '../Images/card2.jpg'
 import test2 from '../Images/Test2.jpg'
 import test3 from '../Images/Test3.jpg'
 import test1 from '../Images/Test1.webp'
-import Galla1 from '../Images/Gallery1.jpg'
+import Galla4 from '../Images/Gallery1.jpg'
 import Galla2 from '../Images/Gallery2.jpg'
 import myVideo from '../Videos/Welcome.mp4'
+import Galla1 from '../Images/Galla1.jpg';
+import Galla3 from "../Images/Galla3.jpg";
 
 function Body() {
     return (
@@ -26,12 +28,12 @@ function Body() {
 
             <div className="WhychooseUs">
                 <div className="grid grid-cols-2 gap-3 mx-14 mt-8">
-                    <div className="video">
-                        <ReactPlayer
+                    <div className="video mx-auto">
+                        {/* <ReactPlayer
                             url={myVideo}
                             controls={true}
                             muted={true}
-                        />
+                        /> */}
                     </div>
 
                     <div className="mx-12 self-center">
@@ -81,18 +83,17 @@ function Body() {
                     <div className=" grid grid-cols-2 gap-4 mx-16">
                         <section className='mx-12'>
                             <div className="relative">
-                                <img src={Galla1} alt="image1" className="object-cover rounded-lg" />
+                                <img src={Galla1} alt="image1" className="object-cover rounded-lg cursor-pointer" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
-                                    Ngorongoro Crater
+                                    Serengeti
                                 </h1>
                             </div>
                         </section>
-
                         <section className='mx-12'>
                             <div className="relative">
-                                <img src={Galla1} alt="image2" className="object-cover rounded-lg" />
+                                <img src={Galla2} alt="image2" className="object-cover rounded-lg cursor-pointer" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
-                                    Serengeti
+                                   Mikumi
                                 </h1>
                             </div>
                         </section>
@@ -105,23 +106,23 @@ function Body() {
                     <div className="grid-cols-3">
                         <div className="flex mx-14 gap-4">
                             <section className='relative'>
-                                <img src={Galla2} alt="image2" className="object-fill rounded-lg bg-center" />
+                                <img src={Galla1} alt="image2" className="object-fill rounded-lg bg-center" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
                                     Serengeti
                                 </h1>
                             </section>
 
                             <section className='relative'>
-                                <img src={Galla2} alt="image2" className="object-fill rounded-lg bg-center" />
+                                <img src={Galla4} alt="image2" className="object-fill rounded-lg bg-center" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
                                     Serengeti
                                 </h1>
                             </section>
 
                             <section className='relative'>
-                                <img src={Galla2} alt="image2" className="object-fill rounded-lg bg-center" />
+                                <img src={Galla3} alt="image2" className="object-fill rounded-lg bg-center" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white">
-                                    Serengeti
+                                    Tarangire
                                 </h1>
                             </section>
                         </div>
