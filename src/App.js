@@ -14,7 +14,7 @@ function App() {
 
       <BrowserRouter>
         <Body />
-        <Form />
+        {/* <Form /> */}
       </BrowserRouter>
 
     </div>
