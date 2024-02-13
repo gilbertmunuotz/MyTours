@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./Components/Home";
 import Body from "./Components/Body";
-import Form from './Components/Form'
+import Form from './Components/Form';
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Body />
         <Form />
+        <Footer />
       </BrowserRouter>
 
     </div>

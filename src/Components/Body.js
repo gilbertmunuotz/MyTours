@@ -1,16 +1,16 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
+import CEO from "../Images/CEO.jpg"
+import last from '../Images/last.jpg'
 import card from '../Images/card3.jpg'
 import card1 from "../Images/card.jpg"
 import card2 from '../Images/card2.jpg'
 import test2 from '../Images/Test2.jpg'
 import test3 from '../Images/Test3.jpg'
 import test1 from '../Images/Test1.webp'
+import Galla1 from '../Images/Galla1.jpg'
+import Galla3 from "../Images/Galla3.jpg"
 import Galla4 from '../Images/Gallery1.jpg'
 import Galla2 from '../Images/Gallery2.jpg'
-import myVideo from '../Videos/Welcome.mp4'
-import Galla1 from '../Images/Galla1.jpg';
-import Galla3 from "../Images/Galla3.jpg";
 
 function Body() {
     return (
@@ -27,29 +27,23 @@ function Body() {
             </div>
 
             <div className="WhychooseUs">
-                <div className="grid grid-cols-2 gap-3 mx-14 mt-8">
+                <h2 className='text-3xl text-center font-bold font-serif mt-20 mb-4'>Message From CEO.</h2>
+                <div className="grid grid-cols-2 mx-14 sm:block">
                     <div className="video mx-auto">
-                        <ReactPlayer
-                            url={myVideo}
-                            controls={true}
-                            muted={true}
-                        />
+                        <img src={CEO} alt="CEO pic" className='object-cover h-96 rounded-lg' />
                     </div>
 
                     <div className="mx-12 self-center">
-                        <h2 className='text-2xl text-center font-bold font-serif'>Why Choose Us</h2>
-                        <p className='text-xl font-serif'>We are committed to responsible tourism practices and believe in protecting the environment and supporting local communities. We work with local guides and businesses, and we offset the carbon footprint of our tours.
-
-                            Ready to embark on your own Tanzanian adventure?
-
-                            Contact John Deere Adventures today and start planning your unforgettable journey!</p>
+                        <p className='text-xl font-serif'>
+                            As Johnwalking Ameda, the proud CEO of John Deere Adventures, I invite you to embark on an unforgettable journey with our esteemed company. For over two decades, we've been crafting unique experiences in the heart of Tanzania, we offer a diverse range of tourist activities, catering to adventurers of all kinds. Whether you seek the thrill of a wildlife safari across the vast savannas, the cultural immersion of visiting local villages, or the serenity of trekking through volcanic landscapes, John Deere Adventures has you covered. Come, join us, and discover the magic of Tanzania - it's an adventure waiting to be unfolded!
+                        </p>
                     </div>
                 </div>
             </div>
 
             <div className="cards">
-                <h5 className='font-bold text-5xl text-center my-10 font-serif'>Tours & Safari</h5>
-                <div className="grid grid-cols-3 gap-6 mx-14">
+                <h5 className='font-bold text-3xl text-center my-10 font-serif'>Tours & Safari</h5>
+                <div className="grid grid-cols-3 gap-6 mx-14 sm:block">
                     <section className='bg-gray-200 rounded-lg shadow-2xl shadow-gray-400 p-8'>
                         <img src={card1} alt="image2" className='object-fill rounded-lg' />
                         <div className="explanations">
@@ -80,8 +74,8 @@ function Body() {
 
             <div className="Gallery1">
                 <div className="my-12">
-                    <div className=" grid grid-cols-2 gap-4 mx-16">
-                        <section className='mx-12'>
+                    <div className=" grid grid-cols-2 gap-4 mx-16 sm:block">
+                        <section className='mx-12 sm:my-3'>
                             <div className="relative">
                                 <img src={Galla1} alt="image1" className="object-cover rounded-lg cursor-pointer" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white font-serif">
@@ -104,18 +98,18 @@ function Body() {
             <div className="Gallery2">
                 <div className="grid">
                     <div className="grid-cols-3">
-                        <div className="flex mx-14 gap-4">
+                        <div className="flex mx-14 gap-4 sm:block">
                             <section className='relative'>
-                                <img src={Galla1} alt="image2" className="object-fill rounded-lg bg-center" />
+                                <img src={Galla4} alt="image2" className="object-fill rounded-lg bg-center" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white font-serif">
-                                    Serengeti
+                                    NgoroNgoro
                                 </h1>
                             </section>
 
                             <section className='relative'>
-                                <img src={Galla4} alt="image2" className="object-fill rounded-lg bg-center" />
+                                <img src={last} alt="image2" className="object-fill rounded-lg bg-center" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white font-serif">
-                                    Serengeti
+                                    Manyara
                                 </h1>
                             </section>
 
@@ -131,9 +125,9 @@ function Body() {
             </div>
 
             <div className="Testimonials">
-                <h2 className='text-center text-3xl font-bold mt-12 font-serif'>Testimonials</h2>
+                <h2 className='text-center text-3xl font-bold mt-12 font-serif sm:text-center'>Testimonials</h2>
                 <section className="text-gray-600 body-font">
-                    <div className="container px-2 py-12 mx-auto">
+                    <div className="container px-2 py-12 mx-auto sm:self-center">
                         <div className="flex flex-wrap -m-4">
                             <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
                                 <div className="h-full text-center">
