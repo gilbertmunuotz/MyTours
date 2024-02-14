@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import CEO from "../Images/CEO.jpg"
 import last from '../Images/last.jpg'
 import card from '../Images/card3.jpg'
@@ -11,6 +12,42 @@ import Galla1 from '../Images/Galla1.jpg'
 import Galla3 from "../Images/Galla3.jpg"
 import Galla4 from '../Images/Gallery1.jpg'
 import Galla2 from '../Images/Gallery2.jpg'
+
+const animateHeader = {
+    initialOffscreen: {
+        y: 0
+    },
+    afterOnscreen: {
+        y: 50,
+        transition: {
+            delay: 0.5
+        }
+    }
+}
+
+const animatePic = {
+    initialOffscreen: {
+        x: 0
+    },
+    afterOnscreen: {
+        x: 50,
+        transition: {
+            delay: 0.5
+        }
+    }
+}
+
+const animateText = {
+    initialOffscreen: {
+        x: 0
+    },
+    afterOnscreen: {
+        x: -50,
+        transition: {
+            delay: 0.5
+        }
+    }
+}
 
 function Body() {
     return (
@@ -26,17 +63,17 @@ function Body() {
                     Unforgettable Experiences Await</p>
             </div>
 
-            <div className="WhychooseUs">
-                <h2 className='text-3xl text-center font-bold font-serif mt-20 mb-4'>Message From CEO.</h2>
-                <div className="grid grid-cols-2 mx-14 sm:block">
-                    <div className="video mx-auto">
+            <div className="CEOMessage">
+                <motion.h2 className='text-3xl text-center font-bold font-serif mt-16 mb-4' variants={animateHeader} initial="initialOffscreen" whileInView={"afterOnscreen"} viewport={{ once: false }} >Message From CEO.</motion.h2>
+                <div className="grid grid-cols-2 mx-14 mt-16 sm:block">
+                    <motion.div className="video mx-auto" variants={animatePic} initial="initialOffscreen" whileInView={"afterOnscreen"} viewport={{ once: false }}>
                         <img src={CEO} alt="CEO pic" className='object-cover h-96 rounded-lg' />
-                    </div>
+                    </motion.div>
 
                     <div className="mx-12 self-center">
-                        <p className='text-xl font-serif'>
+                        <motion.p className='text-xl font-serif' variants={animateText} initial="initialOffscreen" whileInView={"afterOnscreen"} viewport={{ once: false }}  >
                             As Johnwalking Ameda, the proud CEO of John Deere Adventures, I invite you to embark on an unforgettable journey with our esteemed company. For over two decades, we've been crafting unique experiences in the heart of Tanzania, we offer a diverse range of tourist activities, catering to adventurers of all kinds. Whether you seek the thrill of a wildlife safari across the vast savannas, the cultural immersion of visiting local villages, or the serenity of trekking through volcanic landscapes, John Deere Adventures has you covered. Come, join us, and discover the magic of Tanzania - it's an adventure waiting to be unfolded!
-                        </p>
+                        </motion.p>
                     </div>
                 </div>
             </div>
