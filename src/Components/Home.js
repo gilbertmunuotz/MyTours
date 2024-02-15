@@ -25,7 +25,7 @@ function Home() {
     };
 
     return (
-        <div className="Home">
+        <div className="Home" id='home'>
             <div className="w-full h-[90vh] relative overflow-hidden">
                 <Navbar />
                 {/* Stack the h1 and Slider to ensure h1 sits on top */}

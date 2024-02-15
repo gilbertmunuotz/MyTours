@@ -51,7 +51,7 @@ const animateText = {
 
 function Body() {
     return (
-        <div className='Body'>
+        <div className='body' id='body'>
             <div className="Welcome-Text">
                 <h1 className='text-5xl text-center mt-10 uppercase italic font-serif'>John Deere Adventures</h1>
                 <p className='mx-14 text-xl first-letter:text-5xl first-letter:italic font-serif'>Welcome to John Deere Adventures!
@@ -113,20 +113,20 @@ function Body() {
                 <div className="my-12">
                     <div className=" grid grid-cols-2 gap-4 mx-16 sm:block">
                         <section className='mx-12 sm:my-3'>
-                            <div className="relative">
+                            <motion.div className="relative" variants={animatePic} initial="initialOffscreen" whileInView={"afterOnscreen"} viewport={{ once: false }}>
                                 <img src={Galla1} alt="image1" className="object-cover rounded-lg cursor-pointer" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white font-serif">
                                     Serengeti
                                 </h1>
-                            </div>
+                            </motion.div>
                         </section>
                         <section className='mx-12'>
-                            <div className="relative">
+                            <motion.div className="relative" variants={animateText} initial="initialOffscreen" whileInView={"afterOnscreen"} viewport={{ once: false }}>
                                 <img src={Galla2} alt="image2" className="object-cover rounded-lg cursor-pointer" />
                                 <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center text-3xl text-white font-serif">
                                     Mikumi
                                 </h1>
-                            </div>
+                            </motion.div>
                         </section>
                     </div>
                 </div>

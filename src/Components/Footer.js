@@ -6,7 +6,7 @@ import { FaTripadvisor } from "react-icons/fa";
 
 function Footer() {
     return (
-        <div className='Footer'>
+        <div className='Footer' id='footer'>
             <div className="grid">
                 <div className="grid grid-cols-3 bg-green-400 sm:block">
                     <div className="grid1 mx-12 mt-12 w-60">
