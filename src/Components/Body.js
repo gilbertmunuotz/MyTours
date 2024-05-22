@@ -19,9 +19,6 @@ const animateHeader = {
     },
     afterOnscreen: {
         y: 50,
-        transition: {
-            delay: 0.5
-        }
     }
 }
 
@@ -31,9 +28,6 @@ const animatePic = {
     },
     afterOnscreen: {
         x: 50,
-        transition: {
-            delay: 0.5
-        }
     }
 }
 
@@ -43,9 +37,6 @@ const animateText = {
     },
     afterOnscreen: {
         x: -50,
-        transition: {
-            delay: 0.5
-        }
     }
 }
 
