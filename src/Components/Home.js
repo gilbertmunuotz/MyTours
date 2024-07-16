@@ -26,27 +26,27 @@ function Home() {
 
     return (
         <div className="Home" id='home'>
-            <div className="w-full h-[90vh] relative overflow-hidden">
+            <div className="relative h-[90vh] overflow-hidden">
                 <Navbar />
-                {/* Stack the h1 and Slider to ensure h1 sits on top */}
-                <div className="flex flex-col h-full">
-                    <h1 className="text-6xl text-green-600 font-bold rounded-lg absolute top-1/2 left-0 self-center z-10 px-4 py-2 sm:hidden">
+                <div className="h-full flex flex-col justify-center items-center">
+                    <h1 className="text-7xl sm:text-6xl text-green-500 font-bold rounded-lg absolute left-0 sm:left-1/2 top-1/3 transform -translate-x-0 sm:-translate-x-1/2 px-4 py-2 z-10">
                         You Dream It...
-                        <p className='text-2xl'>
+                        <p className="text-xl sm:text-lg">
                             We Make It Happen
                         </p>
                     </h1>
-                    <Slider {...settings} className="w-full h-full z-0">
-                        {slides.map((slide) => (
-                            <span className="slides" key={slide.src}>
-                                <img src={slide} alt="Slide" className="w-full h-full object-contain opacity-95" />
-                            </span>
-                        ))}
-                    </Slider>
+                    <div className="h-full w-full flex flex-col justify-center items-center">
+                        <Slider {...settings} className="w-full h-full">
+                            {slides.map((slide, index) => (
+                                <div key={index} className="w-full h-full">
+                                    <img src={slide} alt={`Slide ${index + 1}`} className="sm:h-[90vh] w-full h-full object-cover bg-cover" />
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
-
 export default React.memo(Home);
