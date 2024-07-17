@@ -1,14 +1,14 @@
 import React from 'react'
 import JohnD from "../Logo/JohnD.png";
-import { GrInstagram } from "react-icons/gr";
 import { FaXTwitter } from "react-icons/fa6"
+import { GrInstagram } from "react-icons/gr";
 import { FaTripadvisor } from "react-icons/fa";
 
 function Footer() {
     return (
         <div className='Footer' id='footer'>
             <div className="grid">
-                <div className="grid grid-cols-3 bg-green-400 sm:block">
+                <div className="grid grid-cols-3 bg-green-400 py-6 sm:block">
                     <div className="grid1 mx-auto mt-12 w-60">
                         <img src={JohnD} alt="John Deere Logo" className='sm:text-center' />
                     </div>

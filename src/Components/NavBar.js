@@ -13,7 +13,7 @@ function Navbar() {
 
                     <li><Link to="body" spy={true} smooth={true} offset={-100} duration={500} className='text-green-600'>About</Link></li>
 
-                    <li><Link to="form" spy={true} smooth={true} offset={-150} duration={600} className='text-green-600'>Contact Us</Link></li>
+                    <li><Link to="footer" spy={true} smooth={true} offset={-150} duration={600} className='text-green-600'>Contact Us</Link></li>
                 </ul>
             </nav>
         </div>
